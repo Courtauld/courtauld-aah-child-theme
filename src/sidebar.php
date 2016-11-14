@@ -9,7 +9,7 @@
     </section>
     <section class="partners">
         <h2>A Partnership between</h2>
-        <a href="http://courtauld.ac.uk/"><img src="<?php echo get_template_directory_uri();?>/img/courtauld-logo-primary.png" alt="The Courtauld Institute of Art"/></a>
+        <a href="http://courtauld.ac.uk/"><img src="<?php echo get_stylesheet_directory_uri();?>/img/courtauld-logo-primary.png" alt="The Courtauld Institute of Art"/></a>
         <a href="http://www.arts.ac.uk/"><img src="<?php echo get_stylesheet_directory_uri();?>/img/ual-logo.jpg" alt="University of the Arts"/></a>
     </section>
     <?php if ( is_active_sidebar( 'sidebar-main' ) ) : ?>
