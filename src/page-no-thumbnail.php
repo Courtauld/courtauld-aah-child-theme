@@ -1,5 +1,7 @@
 <?php
 /*
+    Template Name: Page (No Featured Image / Thumbnail)
+
     The replication of this Theme file in the child theme is necessary to include the Post Inspiration theme section.
 */
 ?>

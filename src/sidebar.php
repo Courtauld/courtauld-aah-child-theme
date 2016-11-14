@@ -1,7 +1,3 @@
-<!--
-    Template Name: Page (No featured image)
-    The replication of this Theme file in the child theme is necessary to include the custom sidebar, which sets different default widgets to the parent theme.
--->
 <aside class="col-xs-offset-1 col-xs-10 col-md-2 sidebar">
     <section class="widget">
         <h2>Search</h2>
