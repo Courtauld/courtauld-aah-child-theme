@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -r dist/*",
     "prebuild": "npm run clean",
-    "build": "npm run build:img && npm run build:php && npm run build:styles && npm run assets",
+    "build": "npm run build:img && npm run build:php && npm run build:styles",
     "postbuild": "cd dist/ && zip -r courtauld-aah-child-theme.zip .",
     "prebuild:img": "mkdir dist/img",
     "build:img": "cp src/img/* dist/img/ & cp src/screenshot.png dist/screenshot.png",
@@ -25,8 +25,5 @@
     "autoprefixer": "latest",
     "cssmin": "latest",
     "postcss-cli": "latest"
-  },
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  }
 }
