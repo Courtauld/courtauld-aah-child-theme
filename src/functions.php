@@ -32,7 +32,7 @@ function wp_get_attachment( $attachment_id ) {
 function courtauld_remove_edit_comments() {
     remove_menu_page( 'edit-comments.php' );
 }
-add_action( 'admin_menu', 'jclwilson_remove_edit_comments' );
+add_action( 'admin_menu', 'courtauld_remove_edit_comments' );
 
 // Removes from post and pages
 function courtauld_remove_comment_support() {
