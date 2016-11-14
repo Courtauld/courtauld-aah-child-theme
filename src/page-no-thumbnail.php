@@ -1,7 +1,8 @@
-<!--
-    Template Name: Page (No featured image)
-    The replication of this Theme Template in the child theme is necessary to include the Post Inspiration theme section.
--->
+<?php
+/*
+    The replication of this Theme file in the child theme is necessary to include the Post Inspiration theme section.
+*/
+?>
 <?php get_header(); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <article class="post">
@@ -11,6 +12,7 @@
                 </h1>
             </header>
             <section class="post__content">
+                <?php get_template_part( 'post-image' ); ?>
                 <?php the_content( 'Continue...' );	?>
             </section>
             <?php get_template_part( 'page-children' ); ?>
