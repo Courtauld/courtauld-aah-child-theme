@@ -13,8 +13,8 @@
                 <?php get_template_part( 'post-image' ); ?>
                 <?php the_content( 'Continue...' );	?>
             </section>
-            <?php get_template_part( 'page-children' ); ?>
             <?php get_template_part( 'post-inspiration' ); ?>
+            <?php get_template_part( 'page-children' ); ?>
         </article>
     <?php endwhile; ?>
     <?php endif; ?>
