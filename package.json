@@ -1,0 +1,29 @@
+{
+  "name": "courtauld-aah-child-theme",
+  "version": "1.0.0",
+  "description": "A WordPress Child Theme developed by Jacob Charles Wilson (@jclwilson) for the Animating Art History website, which extends the 'courtauld-blog-theme'.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -r dist/*",
+    "prebuild": "npm run clean",
+    "build": "npm run build:img && npm run build:php && npm run build:styles",
+    "postbuild": "cd dist/ && zip -r courtauld-aah-child-theme.zip .",
+    "prebuild:img": "mkdir dist/img",
+    "build:img": "cp src/img/* dist/img/ & cp src/screenshot.png dist/screenshot.png",
+    "build:php": "cp src/*.php dist/",
+    "build:styles": "postcss --use autoprefixer -b 'last 2 versions' < src/style.css | cssmin > dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Courtauld/courtauld-aah-child-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Courtauld/courtauld-aah-child-theme/issues"
+  },
+  "homepage": "https://github.com/Courtauld/courtauld-aah-child-theme#readme",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "cssmin": "latest",
+    "postcss-cli": "latest"
+  }
+}
